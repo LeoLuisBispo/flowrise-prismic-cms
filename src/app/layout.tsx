@@ -33,8 +33,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={clsx(nunito.variable, nunito_sans.variable)}>
+    <html lang="en" className={clsx(nunito.variable, nunito_sans.variable)}>
+      <body>
         <Header />
         {children}
         <Footer />

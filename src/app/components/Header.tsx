@@ -1,23 +1,33 @@
 import React from "react";
 import { createClient } from "@/prismicio";
 import { PrismicNextLink } from "@prismicio/next";
+import Bounded from "@/app/components/Bounded";
+import Link from "next/link";
+import Logo from "./Logo";
 
 const Header = async () => {
   const client = createClient();
   const settings = await client.getSingle("settings");
+
   return (
-    <>
-      <header>Header</header>
-      <nav>
-        <ul>
-          {settings.data.navigation.map(({ label, link }) => (
-            <li key={label}>
-              <PrismicNextLink field={link}>{label}</PrismicNextLink>
-            </li>
-          ))}
-        </ul>
-      </nav>
-    </>
+    <Bounded as="header" className="py-4 md:py-6 lg:py-8">
+      <div className="flex gap-4 items-center justify-between sm:flex-row flex-col">
+        <Link href={"/"}>
+          <Logo />
+        </Link>
+        <nav>
+          <ul className="flex">
+            {settings.data.navigation.map(({ label, link }) => (
+              <li key={label}>
+                <PrismicNextLink field={link} className="p-3">
+                  {label}
+                </PrismicNextLink>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </div>
+    </Bounded>
   );
 };
 
