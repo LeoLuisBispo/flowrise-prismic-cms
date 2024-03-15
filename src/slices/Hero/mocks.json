@@ -1,0 +1,70 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"heading": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading1",
+						"content": {
+							"text": "Letter for your love",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"body": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Do est amet occaecat in fugiat adipisicing enim ea commodo. Do est amet occaecat in fugiat adipisicing enim ea commodo est amet occaecat in fugiat adipisicing enim ea commodo occaecat in fugiat adipisicing enim ea commodo.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"button_text": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "thank you"
+			},
+			"button_link": {
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "http://google.com"
+				}
+			},
+			"image": {
+				"origin": {
+					"id": "main",
+					"url": "https://images.unsplash.com/photo-1587614295999-6c1c13675117",
+					"width": 3810,
+					"height": 5715
+				},
+				"url": "https://images.unsplash.com/photo-1587614295999-6c1c13675117",
+				"width": 3810,
+				"height": 5715,
+				"edit": {
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					},
+					"background": "transparent"
+				},
+				"credits": null,
+				"alt": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			}
+		},
+		"items": []
+	}
+]
